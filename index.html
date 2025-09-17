@@ -3,14 +3,14 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html> <!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<title>A professional custom LCD display manufacturer specializing in the production of custom commercial displays, such as digital signage displays</title>
-<meta name="description" content="OEM ODM LCD digital signage advertising screens Get solutions for mall, foodshop, hospital, school and any other public advertising scenes">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<head>
+		<meta charset="utf-8">
+		<title>A professional custom LCD display manufacturer specializing in the production of custom commercial displays, such as digital signage displays</title>
+		<meta name="description" content="OEM ODM LCD digital signage advertising screens Get solutions for mall, foodshop, hospital, school and any other public advertising scenes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 		
-<link rel="stylesheet" href="css/bootstrap.min.css">
-	  
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
 <!-- Main CSS -->
 <link rel="stylesheet" href="css/main.css">        
 <!-- Fonts -->
@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="css/style.css">  
 
 <script src="js/vendor/modernizr.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 </head>
 <body id="home" data-spy="scroll" data-offset="50" data-target=".navbar-default">
@@ -58,11 +59,11 @@
 
 <!-- Header -->
 <header id="revolution-home" class="revolution-home">
-    <div id="rev_slider_490_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0 auto; background-color:transparent; padding:0;">
-        <img src="img/sliders/digital-signage-all-products-banner.jpg" 
-             alt="digital signage all products banner" 
-             style="width: 100%; height: auto; display: block; margin: 0 auto;">
-    </div>
+	<div id="rev_slider_490_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0 auto; background-color:transparent; padding:0;">
+		<img src="img/sliders/digital-signage-all-products-banner.jpg" 
+		alt="digital signage all products banner" 
+		style="width: 100%; height: auto; display: block; margin: 0 auto;">
+	</div>
 </header>
 
 <!-- Call To Action -->
@@ -94,32 +95,32 @@
 			<div class="col-md-12">
 				<div class="item">
 					<a>
-					  <img src="img/thumbs/digial-signage-for-hotel-industry.jpg" alt="digial signage for hotel">
-					</a>
-				</div>
-				<div class="item">
-					  <a>
-					   <img src="img/thumbs/retail-digital-signage.jpg" alt="retail digital signage">
-					</a>
-				</div>
-				<div class="item">
-					  <a>
-					   <img src="img/thumbs/giant-curved-digital-signage-in-the-mall.jpg" alt="giant curved digital signage for mall">
+						<img src="img/thumbs/digial-signage-for-hotel-industry.jpg" alt="digial signage for hotel">
 					</a>
 				</div>
 				<div class="item">
 					<a>
-					  <img src="img/thumbs/lcd-display-for-control-room.jpg" alt="display for control room">
+						<img src="img/thumbs/retail-digital-signage.jpg" alt="retail digital signage">
 					</a>
 				</div>
 				<div class="item">
 					<a>
-					  <img src="img/thumbs/led-display-for-night-club-stage.jpg" alt="led display for night club">
+						<img src="img/thumbs/giant-curved-digital-signage-in-the-mall.jpg" alt="giant curved digital signage for mall">
 					</a>
 				</div>
 				<div class="item">
 					<a>
-					  <img src="img/thumbs/transparent-led-display-adhesive-installation.jpg" alt="transparent led display">
+						<img src="img/thumbs/lcd-display-for-control-room.jpg" alt="display for control room">
+					</a>
+				</div>
+				<div class="item">
+					<a>
+						<img src="img/thumbs/led-display-for-night-club-stage.jpg" alt="led display for night club">
+					</a>
+				</div>
+				<div class="item">
+					<a>
+						<img src="img/thumbs/transparent-led-display-adhesive-installation.jpg" alt="transparent led display">
 					</a>
 				</div>
 				
@@ -227,47 +228,90 @@
 		<div class="row">
 			<div class="col-md-7">
 				<article class="form-detached">
-					<form action="php/contact-form.php" id="contact-form">
-						<div class="alert alert-success hidden" id="contact-alert-success">
-							<strong>Success!</strong> Thank you for your message. Reply will be in a while!
-						</div>
-						<div class="alert alert-danger hidden" id="contact-alert-error">
-							<strong>Error!</strong> Something went wrong sending your message.
-						</div>
+					<form id="contact-form" action="https://formspree.io/f/xeolnzlb" method="POST">
+						<div id="form-status"></div> <!-- 显示提示信息 -->
+
 						<div class="form-group">
-							<label class="sr-only" for="name"></label>
-							<input type="text" class="form-control" value="" placeholder="Name" data-msg-required="Please enter your name." name="name" id="name">
+							<input type="text" name="name" class="form-control" placeholder="Name" required>
 						</div>
+
 						<div class="form-group">
-							<label class="sr-only" for="email"></label>
-							<input type="email" value="" placeholder="E-mail" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
+							<input type="email" name="email" class="form-control" placeholder="E-mail" required>
 						</div>
+
 						<div class="form-group">
-							<label class="sr-only" for="message"></label>
-							<textarea placeholder="Enter your message..." data-msg-required="Please enter your message." rows="6" class="form-control" name="message" id="message"></textarea>
+							<textarea name="message" class="form-control" placeholder="Enter your message..." rows="6" required></textarea>
 						</div>
-						<input type="submit" value="Send Message" class="btn btn-warning btn-block" data-loading-text="Loading...">
+
+						<!-- 🛡️ Honeypot 防垃圾 -->
+						<div style="display:none;">
+							<input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+						</div>
+
+						<!-- ✅ Cloudflare Turnstile -->
+						<div class="cf-turnstile" data-sitekey="0x4AAAAAAB1rDfY_O5vfaz_G"></div>
+
+						<button type="submit" class="btn btn-warning btn-block">Send Message</button>
 					</form>
-				</article>
-			</div>
-			<div class="col-md-5">
-				<address class="address">
-					<i class="icon icon-basic-mail"></i>
-					<a href="mailto:info@sccdt.com">info@sccdt.com</a>
-				</address>
-				<address class="address">
-					<i class="icon icon-basic-geolocalize-01"></i>
-					No.359, Tangjia South Rd., <br> 
-					Fenghuang St., Guangming Dist., <br>
-					Shenzhen, Guandong, China.<br> 
-				</address>
-				<address class="address">
-					<i class="icon icon-basic-smartphone"></i>
-					(86) 189 2748 9701
-				</address>
-			</div>
-		</div>
-	</div>
+
+					<script>
+						const form = document.getElementById("contact-form");
+						const status = document.getElementById("form-status");
+
+						form.addEventListener("submit", async function (e) {
+							e.preventDefault();
+							status.innerHTML = "<p style='color:blue;'>⏳ 正在提交，请稍候...</p>";
+
+							let data = new FormData(form);
+
+  // Cloudflare Turnstile token
+							let token = document.querySelector('input[name="cf-turnstile-response"]')?.value;
+							if (!token) {
+								status.innerHTML = "<p style='color:red;'>⚠️ 请先通过验证。</p>";
+								return;
+							}
+							data.append("cf-turnstile-response", token);
+
+							try {
+								let response = await fetch(form.action, {
+									method: form.method,
+									body: data,
+									headers: { 'Accept': 'application/json' }
+								});
+
+								if (response.ok) {
+									status.innerHTML = "<p style='color:green;'>✅ 提交成功，我们会尽快联系您！</p>";
+									form.reset();
+      turnstile.reset(); // 🔄 重置验证框
+  } else {
+  	status.innerHTML = "<p style='color:red;'>❌ 提交失败，请稍后再试。</p>";
+  }
+} catch (error) {
+	status.innerHTML = "<p style='color:red;'>⚠️ 网络错误，请检查连接。</p>";
+}
+});
+</script>
+
+</article>
+</div>
+<div class="col-md-5">
+	<address class="address">
+		<i class="icon icon-basic-mail"></i>
+		<a href="mailto:info@sccdt.com">info@sccdt.com</a>
+	</address>
+	<address class="address">
+		<i class="icon icon-basic-geolocalize-01"></i>
+		No.359, Tangjia South Rd., <br> 
+		Fenghuang St., Guangming Dist., <br>
+		Shenzhen, Guandong, China.<br> 
+	</address>
+	<address class="address">
+		<i class="icon icon-basic-smartphone"></i>
+		(86) 189 2748 9701
+	</address>
+</div>
+</div>
+</div>
 </section>
 
 
